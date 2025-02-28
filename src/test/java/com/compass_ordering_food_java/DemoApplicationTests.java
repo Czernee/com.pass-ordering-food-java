@@ -1,4 +1,4 @@
-package com.compass_ordering_food_java.demo;
+package com.compass_ordering_food_java;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
