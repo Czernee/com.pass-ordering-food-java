@@ -1,28 +1,21 @@
-package com.compass_ordering_food_java.models;
+package com.compass_ordering_food_java.dto;
 
-import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
-@Entity
-@Table(name = "orders")
-public class Order {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+@AllArgsConstructor
+@NoArgsConstructor
+public class OrderDto {
     private int id;
-
     private int clientId;
-
     private List<Integer> dishes;
-
     private int totalPrice;
-
     private LocalDateTime dateOrder;
-
     private LocalDateTime dateDeliver;
-
     private boolean completed;
 }
