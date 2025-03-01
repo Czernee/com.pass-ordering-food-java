@@ -1,2 +1,9 @@
-package com.compass_ordering_food_java.dto;public class RegisterDto {
+package com.compass_ordering_food_java.dto;
+
+import lombok.Data;
+
+@Data
+public class RegisterDto {
+    private String username;
+    private String password;
 }
